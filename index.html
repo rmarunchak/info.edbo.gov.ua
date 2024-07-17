@@ -51,54 +51,10 @@
             <button id="low-vision-panel-font-inc"><span>А<sup>+</sup></span></button>
         </div>
     </div>
-    <div id="main-menu">
-        <a href="https://info.edbo.gov.ua/" id="menu-logo" title="Реєстри ЄДЕБО"></a>
-        <div class="flex-break"></div>
-                            <a href="https://info.edbo.gov.ua/registry/" class="menu-item ">Реєстри та сервіси</a>
-                    <a href="https://info.edbo.gov.ua/about/" class="menu-item ">Про ЄДЕБО</a>
-                    <a href="https://info.edbo.gov.ua/news/" class="menu-item ">Новини</a>
-                <a href="https://www.inforesurs.gov.ua/edebo/faq/" target="_blank" class="menu-item">Питання, які часто ставляться (FAQ)</a>
-        <div class="flex-separator"></div>
-        <div>
-            <a href="https://www.facebook.com/Inforesurs/" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/channel/UCloW7pjV9WUU2DURgLUuotA" title="Youtube" target="_blank"><i class="fab fa-youtube" style="color: #FF0000; background-color: transparent"></i></a>
-            <i id="toggle-low-vision" title="Для осіб з обмеженими можливостями" class="fas fa-low-vision"></i>
-            <i id="toggle-tts" title="Озвучування назв розділів, пунктів, заголовків та виділеного тексту" class="fas fa-volume-up"></i>
-        </div>
-    </div>
+
     <div id="content"><link href="./page_files/registry_documents.css" rel="stylesheet">
 <script src="./page_files/eusign.js"></script>
 <script src="./page_files/registry_documents.js"></script>
-<div class="edu-documents">
-    <h1>Довідки про здобувачів освіти за даними ЄДЕБО</h1>
-    <form class="document">
-        <h2>Дані довідки</h2>
-
-        <div>
-            <label for="studyProofId">Номер довідки *</label>
-            <input id="studyProofId" value="28393" maxlength="10" type="number" caption="Номер довідки" autocomplete="off">
-        </div>
-        <div>
-            <label for="rnokpp">РНОКПП (Реєстраційний номер облікової картки платника податків) *</label>
-            <input id="rnokpp" value="3459608035" maxlength="100" caption="РНОКПП" autocomplete="off">
-        </div>
-        <div id="captcha-div">
-            <img id="imgCaptcha" src="./page_files/_data.php" title="Натисніть для оновлення" onclick="refreshCaptcha($(&#39;#captcha&#39;, $form), this)">
-            <div class="hint">Для зміни символів натисніть на зображення</div>
-        </div>
-        <div>
-            <label for="captcha">Введіть символи, що зображені вище</label>
-            <input id="captcha" type="text" caption="Символи перевірки" maxlength="4">
-        </div>
-        <div class="buttons-panel">
-            <button type="button" onclick="checkEdu($(this))">Надіслати запит</button>
-        </div>
-        <div class="hint">
-            Для пошуку довідки  заповніть всі поля.<br>
-            Дані, вказані при перевірці, передаються до пошукової системи в захищеному вигляді.<br>
-        </div>
-    </form>
-</div></div>
     <footer id="footer">
         <div id="footer-copy">© Державне підприємство «Інфоресурс» 2018-2024</div>
     </footer>
