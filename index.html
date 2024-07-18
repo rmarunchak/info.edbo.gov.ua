@@ -36,42 +36,43 @@
         gtag('config', 'G-W6WT1K3VXZ');
     </script>
     <style>
-    body {
-        background-color: #3757a2; /* Adding background color to the body */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensure the body and html take full width */
+        background-color: #3757a2; /* Background color */
     }
 
-    /* Responsive adjustments for all devices */
-    .ui-dialog {
-        width: 100%; /* Makes the dialog use the full screen width */
-        max-width: none; /* Removes any maximum width restriction */
-        margin: 0 auto; /* Centers the dialog */
-        padding: 0; /* Removes padding around the dialog */
+    /* Ensure all containers take full width */
+    .ui-dialog, .ui-widget-content, .ui-dialog-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: none; /* Remove max-width where set */
     }
 
-    .ui-dialog-content {
-        padding: 0; /* Removes padding inside the dialog content area */
-    }
-
+    /* Full-width table */
     #diplom-info {
-        width: 100%; /* Makes the table use the full width available */
-        margin: 0; /* Removes any margin around the table */
-        border-collapse: collapse; /* Ensures that table borders are collapsed into a single border */
+        width: 100%;
+        margin: 0;
+        border-collapse: collapse; /* Improves appearance of borders */
+        table-layout: fixed; /* Ensures columns are evenly spread */
     }
 
+    /* Cell styling for consistency */
     #diplom-info td, #diplom-info th {
-        padding: 8px; /* Sets a consistent padding inside table cells */
-        text-align: left; /* Aligns text to the left */
+        padding: 8px; /* Consistent padding */
+        text-align: left; /* Align text to the left */
     }
 
-    /* Responsive adjustments for small devices */
     @media (max-width: 768px) {
         .ui-dialog {
-            top: 0; /* Aligns the dialog to the top */
-            left: 0; /* Aligns the dialog to the left */
-            right: 0; /* Ensures the dialog stretches to the right edge */
+            position: relative; /* Overrides any absolute positioning */
+            height: auto; /* Fit content height */
         }
     }
-    </style>
+</style>
+
 </head>
 <body data-new-gr-c-s-check-loaded="14.1187.0" data-gr-ext-installed="">
 
