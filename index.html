@@ -35,22 +35,40 @@
         gtag('js', new Date());
         gtag('config', 'G-W6WT1K3VXZ');
     </script>
-      <style>
-        body {
-            background-color: #3757a2; /* Adding background color to the body */
-        }
+    <style>
+    body {
+        background-color: #3757a2; /* Adding background color to the body */
+    }
 
-         /* Responsive adjustments for small devices */
+    /* Responsive adjustments for all devices */
+    .ui-dialog {
+        width: 100%; /* Makes the dialog use the full screen width */
+        max-width: none; /* Removes any maximum width restriction */
+        margin: 0 auto; /* Centers the dialog */
+        padding: 0; /* Removes padding around the dialog */
+    }
+
+    .ui-dialog-content {
+        padding: 0; /* Removes padding inside the dialog content area */
+    }
+
+    #diplom-info {
+        width: 100%; /* Makes the table use the full width available */
+        margin: 0; /* Removes any margin around the table */
+        border-collapse: collapse; /* Ensures that table borders are collapsed into a single border */
+    }
+
+    #diplom-info td, #diplom-info th {
+        padding: 8px; /* Sets a consistent padding inside table cells */
+        text-align: left; /* Aligns text to the left */
+    }
+
+    /* Responsive adjustments for small devices */
     @media (max-width: 768px) {
         .ui-dialog {
-            width: 95%; /* Makes the dialog use more of the screen on small devices */
-            left: 2.5%; /* Centers the dialog */
-            right: 2.5%; /* Helps in maintaining the centering */
-            margin: 10px auto; /* Adds automatic margins for top/bottom */
-        }
-        #diplom-info {
-            width: 100%; /* Forces the table to expand to the dialog width */
-            table-layout: fixed; /* Improves the handling of column widths */
+            top: 0; /* Aligns the dialog to the top */
+            left: 0; /* Aligns the dialog to the left */
+            right: 0; /* Ensures the dialog stretches to the right edge */
         }
     }
     </style>
